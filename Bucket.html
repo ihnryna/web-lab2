@@ -43,7 +43,7 @@
         <td>
             <article class="row"><input type="text" class="product-name-field" value="Сир"/>
                 <span class="edit-buttons">
-                    <button class="minus-button">–</button>
+                    <button class="minus-button-disabled">–</button>
                     <span class="product-amount">1</span>
                     <button class="plus-button">+</button>
                 </span>
@@ -55,23 +55,35 @@
 </table>
 <table class="result-table">
     <tr>
-        <td><span class="left">Залишилося</span>
+        <td class="left-place"><span class="left">Залишилося</span>
         </td>
     </tr>
     <tr>
         <td class="not-bought">
-            <span class="product-item">Печиво <span class="amount">2</span> </span>
-            <span class="product-item">Сир <span class="amount">1</span> </span>
+            <span class="product-item">
+                <span class="product-item-name">
+                    Печиво</span>
+                <span class="amount">2</span>
+            </span>
+            <span class="product-item">
+                <span class="product-item-name">
+                    Сир</span>
+                <span class="amount">1</span>
+            </span>
         </td>
     </tr>
     <tr>
-        <td>
+        <td class="left-place">
             <span class="left">Куплено</span>
         </td>
     </tr>
     <tr>
         <td class="bought">
-            <span class="product-item">Помідори <span class="amount">2</span> </span>
+            <span class="product-item">
+                <span class="product-item-name">
+                Помідори</span>
+                <span class="amount">2</span>
+            </span>
         </td>
     </tr>
 </table>

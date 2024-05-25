@@ -125,6 +125,18 @@ th, td {
     transform: translateY(3px);
 }
 
+.minus-button-disabled{
+    width: 35px;
+    height: 34px;
+    background-color: #ef9f9e;
+    border-radius: 17px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    box-shadow: 0 3px #ef9f9e;
+}
+
 
 .plus-button{
     width: 35px;
@@ -151,12 +163,12 @@ th, td {
 
 .row-extra .status-button{
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 .status-button{
     position: absolute;
-    right: 40px;
+    right: 50px;
     width: 120px;
     height: 34px;
     border: 1px solid #dadada;
@@ -181,7 +193,7 @@ th, td {
 
 .delete-button{
     position: absolute;
-    right: 0;
+    right: 10px;
     width: 35px;
     height: 34px;
     background-color: #db2828;
@@ -217,9 +229,14 @@ th, td {
     margin-right: 10px;
 }
 
+.left-place{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .left{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     margin: 5px;
 }
 
@@ -231,8 +248,7 @@ th, td {
     padding: 20px;
 }
 
-
-.not-bought .product-item {
+.product-item {
     font-weight: bold;
     font-size: small;
     background-color: #e8e8e8;
@@ -243,16 +259,8 @@ th, td {
     color: #5e5e5e;
 }
 
-.bought .product-item {
-    font-weight: bold;
-    font-size: small;
-    background-color: #e8e8e8;
-    display: inline-block;
-    height: 25px;
-    padding: 7px 7px 7px 10px;
-    border-radius: 5px;
+.bought .product-item-name {
     text-decoration-line: line-through;
-    color: #5e5e5e;
 }
 
 .not-bought .amount {
