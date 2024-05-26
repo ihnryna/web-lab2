@@ -7,7 +7,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #ddd;
-    padding: 5px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(79, 79, 79, 0.8);
@@ -24,7 +23,6 @@ th, td {
     border-spacing: 0;
     width: 72%;
     border: 1px solid #ddd;
-    padding: 5px;
     float: left;
     margin-top: 10px;
     margin-right: 0;
@@ -36,7 +34,7 @@ th, td {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     font-size: 17px;
-    padding-left: 10px;
+    padding-left: 1%;
     border: 1px solid #ccc;
 }
 
@@ -83,6 +81,7 @@ th, td {
 .product-name-field{
     padding-left: 10px;
     height: 30px;
+    width: 15%;
     border-radius: 3px;
     border: 1px solid #2285d0;
     box-shadow: 0 0 7px #2285d0;
@@ -169,7 +168,7 @@ th, td {
 .status-button{
     position: absolute;
     right: 50px;
-    width: 120px;
+    width: 12%;
     height: 34px;
     border: 1px solid #dadada;
     background-color: #f3f3f3;
@@ -224,9 +223,9 @@ th, td {
     border: 1px solid #ddd;
     padding: 5px;
     float: right;
-    margin-left: 15px;
+    margin-left: 2%;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 .left-place{
@@ -237,7 +236,7 @@ th, td {
 .left{
     font-weight: bold;
     font-size: 24px;
-    margin: 5px;
+    margin: 2%;
 }
 
 .not-bought{
@@ -257,6 +256,7 @@ th, td {
     padding: 7px 7px 7px 10px;
     border-radius: 5px;
     color: #5e5e5e;
+    margin-top: 3px;
 }
 
 .bought .product-item-name {
@@ -323,10 +323,6 @@ badge:hover{
     font-size: 12px;
     font-weight: initial;
 }
-.created{
-    font-size: 10px;
-    display: none;
-}
 
 @media print {
     badge{
@@ -339,5 +335,76 @@ badge:hover{
     .badge-title{
         display: none;
     }
+    th, td {
+        padding: 0;
+    }
+}
 
+@media (max-width: 800px) {
+    .left{
+        font-weight: bold;
+        font-size: 100%;
+        margin: 2%;
+    }
+    .main-add-field{
+        width: 72%;
+    }
+    .add-button{
+        width: 22%;
+    }
+    .status-button{
+        font-size: 60%;
+    }
+    .edit-buttons{
+        right: 30%;
+    }
+    .delete-button{
+        right: 5px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .products-table{
+        width: 62%;
+    }
+    .result-table{
+        width: 32%;
+    }
+    .status-button{
+        font-size: 40%;
+        right: 41px;
+    }
+}
+
+@media (max-width: 500px) {
+    .left{
+        font-size: 24px;
+    }
+    .products-table{
+        float: none;
+        width: 100%;
+    }
+    .result-table{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-add-field{
+        width: 70%;
+    }
+    .add-button{
+        width: 27%;
+    }
+    .status-button{
+        width: 100px;
+        font-size: 13px;
+        right: 50px;
+    }
+    .edit-buttons{
+        right: 50%;
+    }
+    .delete-button{
+        right: 10px;
+    }
 }
