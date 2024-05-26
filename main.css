@@ -119,13 +119,13 @@ th, td {
     background-color: #c02627;
 }
 
-.minus-button:active {
+.minus-button:enabled:active {
     background-color: #b21f20;
     box-shadow: 0 0 #b21f20;
     transform: translateY(3px);
 }
 
-.minus-button-disabled{
+.minus-button:disabled{
     width: 35px;
     height: 34px;
     background-color: #ef9f9e;
@@ -286,6 +286,58 @@ th, td {
     text-decoration-line: line-through;
 }
 
+badge {
+    background: #af00da;
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: -173px;
+    left: 3%;
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    padding: 13px 5px 5px;
+    transition: all 1s ease;
+}
 
+badge:hover{
+    transform: translateY(-50px);
+    background: #4c01da;
+}
 
+.badge-title{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
 
+.created-by{
+    text-align: left;
+    padding-left: 18px;
+    top: 0;
+    font-size: 10px;
+    font-weight: initial;
+}
+
+.author{
+    font-size: 12px;
+    font-weight: initial;
+}
+.created{
+    font-size: 10px;
+    display: none;
+}
+
+@media print {
+    badge{
+        background-color: white;
+        border: 2px solid #af00da;
+        color: black;
+        padding: 3px 5px 5px;
+        bottom: -150px;
+    }
+    .badge-title{
+        display: none;
+    }
+
+}
