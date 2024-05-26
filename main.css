@@ -192,6 +192,16 @@ th, td {
     transform: translateY(-20px);
 }
 
+.minus-button:active:after {
+    bottom: 20px;
+    left: -120%;
+}
+
+.minus-button:disabled:active:after {
+    bottom: 20px;
+    left: -36.5%;
+}
+
 .plus-button{
     width: 35px;
     height: 34px;
@@ -237,6 +247,11 @@ th, td {
     opacity: 1;
     scale: 1;
     transform: translateY(-20px);
+}
+
+.plus-button:active:after {
+    bottom: 20px;
+    left: -120%;
 }
 
 .row-extra .status-button{
@@ -490,6 +505,9 @@ badge:hover{
     .add-button::after{
         right: 35%;
     }
+    .status-button:after{
+        right: -50%;
+    }
 }
 
 
@@ -509,6 +527,9 @@ badge:hover{
     }
     .add-button::after{
         right: 40%;
+    }
+    .status-button:after{
+        right: -70%;
     }
 }
 
@@ -545,5 +566,8 @@ badge:hover{
     }
     .add-button::after{
         right: 5%;
+    }
+    .status-button:after{
+        right: -10%;
     }
 }
