@@ -61,6 +61,33 @@ th, td {
     box-shadow: 0 7px #1e608f, 0 -7px #1e608f;
 }
 
+
+.add-button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    opacity: 0;
+    scale: 0;
+    transition: 1s opacity, 1s scale, 1s transform;
+    width: 120px;
+    height: 30px;
+    background-color: #af00da;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 12px;
+    font-weight: initial;
+    font-size: 15px;
+}
+
+.add-button:hover:after {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(-20px);
+}
+
+
 .row, .row-extra{
     position: relative;
     padding-bottom: 10px;
@@ -71,6 +98,10 @@ th, td {
 }
 
 .row-extra .minus-button{
+    visibility: hidden;
+}
+
+.row-extra .delete-button{
     visibility: hidden;
 }
 
@@ -136,6 +167,30 @@ th, td {
     box-shadow: 0 3px #ef9f9e;
 }
 
+.minus-button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    bottom: 20px;
+    right: 35%;
+    scale: 0;
+    transition: 1s opacity, 1s scale, 1s transform;
+    width: 120px;
+    height: 30px;
+    background-color: #af00da;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 12px;
+    font-weight: initial;
+    font-size: 15px;
+}
+
+.minus-button:hover:after {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(-20px);
+}
 
 .plus-button{
     width: 35px;
@@ -159,6 +214,30 @@ th, td {
     transform: translateY(3px);
 }
 
+.plus-button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    bottom: 20px;
+    left: 35%;
+    scale: 0;
+    transition: 1s opacity, 1s scale, 1s transform;
+    width: 120px;
+    height: 30px;
+    background-color: #af00da;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 12px;
+    font-weight: initial;
+    font-size: 15px;
+}
+
+.plus-button:hover:after {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(-20px);
+}
 
 .row-extra .status-button{
     position: absolute;
@@ -189,6 +268,30 @@ th, td {
     transform: translateY(3px);
 }
 
+.status-button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    bottom: 20px;
+    scale: 0;
+    transition: 1s opacity, 1s scale, 1s transform;
+    right: 2%;
+    width: 120px;
+    height: 50px;
+    background-color: #af00da;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 12px;
+    font-weight: initial;
+    font-size: 15px;
+}
+
+.status-button:hover:after {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(-20px);
+}
 
 .delete-button{
     position: absolute;
@@ -214,7 +317,30 @@ th, td {
     transform: translateY(3px);
 }
 
+.delete-button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    bottom: 20px;
+    scale: 0;
+    transition: 1s opacity, 1s scale, 1s transform;
+    left: -130%;
+    width: 120px;
+    height: 30px;
+    background-color: #af00da;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 12px;
+    font-weight: initial;
+    font-size: 15px;
+}
 
+.delete-button:hover:after {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(-20px);
+}
 
 .result-table{
     border-collapse: collapse;
@@ -361,6 +487,9 @@ badge:hover{
     .delete-button{
         right: 5px;
     }
+    .add-button::after{
+        right: 35%;
+    }
 }
 
 
@@ -374,6 +503,12 @@ badge:hover{
     .status-button{
         font-size: 40%;
         right: 41px;
+    }
+    .add-button{
+        font-size: 13px;
+    }
+    .add-button::after{
+        right: 40%;
     }
 }
 
@@ -395,6 +530,7 @@ badge:hover{
     }
     .add-button{
         width: 27%;
+        font-size: 17px;
     }
     .status-button{
         width: 100px;
@@ -406,5 +542,8 @@ badge:hover{
     }
     .delete-button{
         right: 10px;
+    }
+    .add-button::after{
+        right: 5%;
     }
 }
