@@ -7,91 +7,77 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-<table class="products-table">
-    <tr>
-        <td>
-            <article><input type="text" class="main-add-field" placeholder="Назва товару"/><button class="add-button" data-tooltip="Додати товар">Додати</button>
-            </article>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <article class="row-extra"><span class="product-name">Помідори</span>
-                <span class="edit-buttons">
+<div class="products-table">
+
+    <div class="cell">
+            <input type="text" class="main-add-field" placeholder="Назва товару"/><button class="add-button" data-tooltip="Додати товар">Додати</button>
+            </div>
+    <div class="cell">
+        <article class="row-extra"><span class="product-name">Помідори</span>
+            <span class="edit-buttons">
                     <button class="minus-button" data-tooltip="Відняти 1">–</button>
                     <span class="product-amount">2</span>
                     <button class="plus-button" data-tooltip="Додати 1">+</button>
                 </span>
-                <button class="status-button" data-tooltip="Позначити як некуплений">Не куплено</button>
-                <button class="delete-button" data-tooltip="Видалити">×</button>
-            </article>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <article class="row"><span class="product-name">Печиво </span>
-                <span class="edit-buttons">
+            <button class="status-button" data-tooltip="Позначити як некуплений">Не куплено</button>
+            <button class="delete-button" data-tooltip="Видалити">×</button>
+        </article>
+    </div>
+    <div class="cell">
+        <article class="row"><span class="product-name">Печиво </span>
+            <span class="edit-buttons">
                     <button class="minus-button" data-tooltip="Відняти 1">–</button>
                     <span class="product-amount">2</span>
                     <button class="plus-button" data-tooltip="Додати 1">+</button>
                 </span>
-                <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
-                <button class="delete-button" data-tooltip="Видалити">×</button>
-            </article>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <article class="row"><input type="text" class="product-name-field" value="Сир"/>
-                <span class="edit-buttons">
+            <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити">×</button>
+        </article>
+    </div>
+    <div class="cell">
+        <article class="row"><input type="text" class="product-name-field" value="Сир"/>
+            <span class="edit-buttons">
                     <button disabled class="minus-button" data-tooltip="Відняти 1">–</button>
                     <span class="product-amount">1</span>
                     <button class="plus-button" data-tooltip="Додати 1">+</button>
                 </span>
-                <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
-                <button class="delete-button" data-tooltip="Видалити">×</button>
-            </article>
-        </td>
-    </tr>
-</table>
-<table class="result-table">
-    <tr>
-        <td class="left-place"><span class="left">Залишилося</span>
-        </td>
-    </tr>
-    <tr>
-        <td class="not-bought">
+            <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити">×</button>
+        </article>
+    </div>
+</div>
+<aside class="result-table">
+    <div class="left-place cell">
+        <span class="left">Залишилося</span>
+    </div>
+    <div class="not-bought cell">
             <span class="product-item">
                 <span class="product-item-name">
                     Печиво</span>
                 <span class="amount">2</span>
             </span>
-            <span class="product-item">
+        <span class="product-item">
                 <span class="product-item-name">
                     Сир</span>
                 <span class="amount">1</span>
             </span>
-        </td>
-    </tr>
-    <tr>
-        <td class="left-place">
-            <span class="left">Куплено</span>
-        </td>
-    </tr>
-    <tr>
-        <td class="bought">
+    </div>
+    <div class="left-place cell">
+        <span class="left">Куплено</span>
+    </div>
+    <div class="bought cell">
             <span class="product-item">
                 <span class="product-item-name">
                 Помідори</span>
                 <span class="amount">2</span>
             </span>
-        </td>
-    </tr>
-</table>
+    </div>
+</aside>
 <badge>
     <span class="badge-title">Buy List</span>
     <p class="created-by">Created by:
-        <span class="author">Hryshchenko Iryna</span></p>
+        <span class="author">Hryshchenko Iryna</span>
+    </p>
 </badge>
 </body>
 </html>

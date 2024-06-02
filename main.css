@@ -1,21 +1,14 @@
 body{
     background-color: #dadada;
     font-family: Tahoma, sans-serif;
+    display: flex;
+    align-items: flex-start;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid #ddd;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 3px rgba(79, 79, 79, 0.8);
-}
-
-th, td {
+.cell {
     text-align: left;
     padding: 16px;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .products-table{
@@ -26,6 +19,9 @@ th, td {
     float: left;
     margin-top: 10px;
     margin-right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(79, 79, 79, 0.8);
 }
 
 .main-add-field{
@@ -367,6 +363,9 @@ th, td {
     margin-left: 2%;
     margin-top: 10px;
     margin-right: 1%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(79, 79, 79, 0.8);
 }
 
 .left-place{
@@ -534,6 +533,10 @@ badge:hover{
 }
 
 @media (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+
     .left{
         font-size: 24px;
     }
@@ -543,7 +546,7 @@ badge:hover{
     }
     .result-table{
         float: none;
-        width: 100%;
+        width: 98%;
         margin-left: 0;
     }
     .main-add-field{
