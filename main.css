@@ -89,23 +89,9 @@ body{
     padding-bottom: 10px;
 }
 
-.row-extra .plus-button{
-    visibility: hidden;
-}
-
-.row-extra .minus-button{
-    visibility: hidden;
-}
-
-.row-extra .delete-button{
-    visibility: hidden;
-}
-
-.row-extra .product-name{
-    text-decoration-line: line-through;
-}
 
 .product-name-field{
+    display: none;
     padding-left: 10px;
     height: 30px;
     width: 15%;
@@ -462,6 +448,22 @@ badge:hover{
 .author{
     font-size: 12px;
     font-weight: initial;
+}
+
+.row-extra .plus-button{
+    visibility: hidden;
+}
+
+.row-extra .minus-button{
+    visibility: hidden;
+}
+
+.row-extra .delete-button{
+    visibility: hidden;
+}
+
+.row-extra .product-name{
+    text-decoration-line: line-through;
 }
 
 @media print {

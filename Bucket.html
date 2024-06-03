@@ -5,44 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Кошик покупок</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="algs.js"></script>
 </head>
 <body>
 <div class="products-table">
-
     <div class="cell">
-            <input type="text" class="main-add-field" placeholder="Назва товару"/><button class="add-button" data-tooltip="Додати товар">Додати</button>
-            </div>
+        <input type="text" class="main-add-field" placeholder="Назва товару" id="m"/><button class="add-button" data-tooltip="Додати товар" onclick=add();>Додати</button>
+    </div>
     <div class="cell">
-        <article class="row-extra"><span class="product-name">Помідори</span>
+        <article class="row-extra"><span class="product-name" onclick=showField(this)>Помідори</span>
             <span class="edit-buttons">
-                    <button class="minus-button" data-tooltip="Відняти 1">–</button>
+                    <button class="minus-button" data-tooltip="Відняти 1" onclick=minus(this)>–</button>
                     <span class="product-amount">2</span>
-                    <button class="plus-button" data-tooltip="Додати 1">+</button>
+                    <button class="plus-button" data-tooltip="Додати 1" onclick=plus(this)>+</button>
                 </span>
-            <button class="status-button" data-tooltip="Позначити як некуплений">Не куплено</button>
-            <button class="delete-button" data-tooltip="Видалити">×</button>
+            <button class="status-button" data-tooltip="Позначити як некуплений" onclick=buy(this)>Не куплено</button>
+            <button class="delete-button" data-tooltip="Видалити" onclick=deleteProduct(this)>×</button>
         </article>
     </div>
     <div class="cell">
-        <article class="row"><span class="product-name">Печиво </span>
+        <article class="row"><span class="product-name" onclick=showField(this);>Печиво</span>
             <span class="edit-buttons">
-                    <button class="minus-button" data-tooltip="Відняти 1">–</button>
+                    <button class="minus-button" data-tooltip="Відняти 1" onclick=minus(this)>–</button>
                     <span class="product-amount">2</span>
-                    <button class="plus-button" data-tooltip="Додати 1">+</button>
+                    <button class="plus-button" data-tooltip="Додати 1" onclick=plus(this)>+</button>
                 </span>
-            <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
-            <button class="delete-button" data-tooltip="Видалити">×</button>
+            <button class="status-button" data-tooltip="Позначити як куплений" onclick=buy(this)>Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити" onclick=deleteProduct(this)>×</button>
         </article>
     </div>
     <div class="cell">
-        <article class="row"><input type="text" class="product-name-field" value="Сир"/>
+        <article class="row"><span class="product-name" onclick=showField(this);>Cир</span>
             <span class="edit-buttons">
-                    <button disabled class="minus-button" data-tooltip="Відняти 1">–</button>
+                    <button disabled class="minus-button" data-tooltip="Відняти 1" onclick=minus(this)>–</button>
                     <span class="product-amount">1</span>
-                    <button class="plus-button" data-tooltip="Додати 1">+</button>
+                    <button class="plus-button" data-tooltip="Додати 1" onclick=plus(this)>+</button>
                 </span>
-            <button class="status-button" data-tooltip="Позначити як куплений">Куплено</button>
-            <button class="delete-button" data-tooltip="Видалити">×</button>
+            <button class="status-button" data-tooltip="Позначити як куплений" onclick=buy(this)>Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити" onclick=deleteProduct(this)>×</button>
         </article>
     </div>
 </div>
@@ -51,26 +51,11 @@
         <span class="left">Залишилося</span>
     </div>
     <div class="not-bought cell">
-            <span class="product-item">
-                <span class="product-item-name">
-                    Печиво</span>
-                <span class="amount">2</span>
-            </span>
-        <span class="product-item">
-                <span class="product-item-name">
-                    Сир</span>
-                <span class="amount">1</span>
-            </span>
     </div>
     <div class="left-place cell">
         <span class="left">Куплено</span>
     </div>
     <div class="bought cell">
-            <span class="product-item">
-                <span class="product-item-name">
-                Помідори</span>
-                <span class="amount">2</span>
-            </span>
     </div>
 </aside>
 <badge>
