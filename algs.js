@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     let a = document.getElementsByClassName("main-add-field")[0];
-    alert(a)
     a.addEventListener("keypress", (event) => {
         if (event.key === "Enter") {
             document.getElementsByClassName("add-button")[0].click();
